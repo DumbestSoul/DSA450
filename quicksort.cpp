@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 
 using namespace std;
 
@@ -51,8 +51,11 @@ int main(){
     int arr[]=  {5, 3, 1, 78, 10, 4, 23};
     cout << "ARRAY BEFORE SORTING IS\n";
     display(arr, 7);
+    auto start = clock();   //to measure the timestamp before doing the sorting
     quickSort(arr, 0, 6);
+    auto end = clock(); //to measure the timestamp after sorting the array.
     cout << "ARRAY AFTER SORTING IS\n";
     display(arr, 7);
+    cout << "\nElapsed time: " << end - start << endl;
     return 0;
 }
